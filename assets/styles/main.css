@@ -1,1 +1,28 @@
-/*# sourceMappingURL=main.css.map */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Roboto;
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  margin: 0;
+}
+
+.footer {
+  background-color: #353535;
+  padding: 22px 25px;
+  margin: 0;
+  color: white;
+}
+.footer h2 {
+  font-family: Shrikhand;
+  font-size: 18px;
+  margin: 0;
+}/*# sourceMappingURL=main.css.map */

@@ -1,8 +1,40 @@
 $background: #f6f6f6;
 $grey-tint4: #7e7e7e;
+$dark-grey: #353535;
 $primary: #9356dc;
+$secondary: #ff79da;
 $green-font: #008766;
 $green-background: #99e2d0;
 @mixin btn-gradient {
-  background: linear-gradient($primary, #ff79da);
+  background: linear-gradient($primary, $secondary);
 }
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Roboto;
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  margin: 0;
+}
+
+.footer {
+  background-color: $dark-grey;
+  padding: 22px 25px;
+  margin: 0;
+  color: white;
+  h2 {
+    font-family: Shrikhand;
+    font-size: 18px;
+    margin: 0;
+  }
+}
+

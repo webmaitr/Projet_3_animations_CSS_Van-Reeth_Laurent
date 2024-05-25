@@ -1,3 +1,18 @@
+@use "main";
+
 .location {
-  
+  background-color: $background;
+  display: flex;
+}
+
+.restaurants-section {
+  background-color: $background;
+}
+
+.restaurant-card {
+  display: flex;
+  flex-direction: column;
+  >img {
+    max-width: 100%;
+  }
 }
