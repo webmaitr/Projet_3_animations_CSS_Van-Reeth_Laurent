@@ -1,0 +1,8 @@
+$background: #f6f6f6;
+$grey-tint4: #7e7e7e;
+$primary: #9356dc;
+$green-font: #008766;
+$green-background: #99e2d0;
+@mixin btn-gradient {
+  background: linear-gradient($primary, #ff79da);
+}
