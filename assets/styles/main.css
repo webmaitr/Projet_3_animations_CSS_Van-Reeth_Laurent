@@ -36,6 +36,20 @@ ul {
   width: 162px;
 }
 
+.restaurant-card .restaurant-card-info input[type=checkbox] {
+  display: none;
+}
+.restaurant-card .restaurant-card-info input[type=checkbox] + label {
+  cursor: pointer;
+  fill: none;
+  stroke: #101010;
+  transition: opacity 2s;
+}
+.restaurant-card .restaurant-card-info input[type=checkbox]:checked + label {
+  fill: url("#pink-gradient");
+  stroke: none;
+}
+
 .footer {
   background-color: #353535;
   padding: 22px 25px;

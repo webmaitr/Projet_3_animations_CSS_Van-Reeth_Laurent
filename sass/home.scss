@@ -35,7 +35,6 @@ h2 {
   padding-bottom: 52px;
   h1 {
     margin: 4px 58px 17px 42px;
-
   }
   p {
     font-weight: 300;
@@ -45,6 +44,13 @@ h2 {
   .pink-btn {
     @include btn-gradient;
     padding: 0 1.17rem;
+    transition: 
+      filter 400ms ease-in-out,
+      background 300ms ease-in-out;
+    &:hover {
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.45));
+      background: linear-gradient(173deg,$secondary 12%,$primary 132%);
+    }
   }
 }
 
@@ -89,7 +95,6 @@ h2 {
   }
 }
 
-
 .restaurants-section {
   background-color: $background;
   padding: 54px 18px 66px 17px;
@@ -97,47 +102,51 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 18px;
-    li {
-      border-radius: 15px;background-color: white;
+    .restaurant-card {
+      display: grid;
+      grid-template-rows: 174px 77px;
+      border-radius: 15px;
+      background-color: white;
+      .img-box {
+        display: block;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 15px 15px 0 0;
+          object-fit: cover;
+          object-position: bottom;
+        }
+      }
+      .restaurant-card-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5px 13px;
+        h3 {
+          font-size: 1.1rem;
+          padding-bottom: 5px;
+        }
+        p {
+          font-weight: 300;
+          font-size: 1.06rem;
+        }  
+      }
     }
   }
 }
 
-.restaurant-card {
-  display: flex;
-  flex-direction: column;
-  height: 251px;
-  >img {
-    width: 100%;
-    height: 231px;
-    border-radius: 15px 15px 0 0;
-    object-fit: cover;
-    object-position: bottom;
-    overflow: hidden;
-  }
-  .portrait-pic {
-    object-position: center -148px;
-  }
-  .restaurant-card-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 77px;
-    margin: 16px 13px;
-    h3 {
-      font-size: 1.1rem;
-      padding-bottom: 5px;
-    }
-    p {
-      font-weight: 300;
-      font-size: 1.06rem;
-    }
-    .fa-regular {
-      font-size: 1.3rem;
-      &.liked {
-        font-weight: 700;
-        color: linear-gradient($secondary,$primary);
+@media screen and (min-width: 768px) {
+  .restaurants-section {
+    ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+      li {
+        flex: 1 1 40%;
       }
-    }  
+    }
   }
+}
+
+@media screen and (min-width: 1024px) {
+
 }
