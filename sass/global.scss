@@ -5,6 +5,10 @@ $primary: #9356dc;
 $secondary: #ff79da;
 $green-font: #008766;
 $green-background: #99e2d0;
+$pix28: 1.75rem;
+$pix24: 1.5rem;
+$pix18: 1.125rem;
+$pix15: 0.937rem;
 @mixin btn-gradient {
   background: linear-gradient(173deg,$secondary -22%,$primary 120%);;
   height: 50px;
@@ -41,39 +45,34 @@ ul {
 }
 
 .header {
-  height: 3.9rem;
-  align-content: center;
-  figure {
-  width: 197px;
-  height: 36px;
-  padding-top: 0.5rem;
-  margin: 0 auto;
-  text-align: center;
-  }
+  display: grid;
+  grid-template-rows: 63px;
+  justify-content: center;
+  align-items: center;
   img {
     width: 162px;
   }
 }
 
+
 //like button
-.restaurant-card {
-  .restaurant-card-info {
-    input[type="checkbox"] {
-      display: none;
-      & + label {
-        cursor: pointer;
-        fill: none;
-        stroke: #101010;
-        transition: 
-          opacity 2s;
-      }
-      &:checked + label {
-        fill: url("#pink-gradient");
-        stroke: none;
-      }
-    }  
-  }
+.like-zone {
+  input[type="checkbox"] {
+    display: none;
+    & + label {
+      cursor: pointer;
+      fill: none;
+      stroke: #101010;
+      transition: 
+        opacity 2s;
+    }
+    &:checked + label {
+      fill: url("#pink-gradient");
+      stroke: none;
+    }
+  }  
 }
+
 
 .footer {
   background-color: $dark-grey;
@@ -100,3 +99,31 @@ ul {
   }
 }
 
+@media screen and (min-width: 951px) {
+  .footer {
+    height: 114px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: last baseline;
+    h2 {
+      margin-bottom: 0;
+      margin-right: 40px;
+    }
+    ul {
+      display: flex;
+      gap: 10px;
+    }
+    ul:first-of-type {
+      order: 3;
+      li {
+        width: 190px;
+      }
+    }
+    ul:last-of-type {
+      order: 2;
+      li {
+        width: 130px;
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+@import "global";
+
+header{
+  position: relative;
+  z-index: 1;
+  margin-bottom: -32px;
+  .header {
+    a>img {
+      width: 30px;
+      position: absolute;
+      top: 17px; 
+      left: 17px;
+    }
+  }
+  .top-restau-imgbox {
+    img {
+      width: 100%
+    }
+  }
+}
+
+h1 {
+  font-family: Shrikhand;
+  font-size: $pix28;
+  margin-left: 2px;
+}
+.title-like-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 32px;
+}
+.like-zone {
+  padding-right: 28px;
+}
+
+main {
+  background-color: $background;
+  position: relative;
+  z-index: 2;
+  border-radius: 32px 32px 0 0;
+  padding: 0 13px;
+}
+
+.menus {
+  margin-top: 40px;
+  h2 {
+    font-weight: 200;
+    font-size: 1rem;
+  }
+  .green-line {
+    width: 40px;
+    height: 3px;
+    background-color: $green-background;
+  }
+  ul {
+    margin-bottom: 40px;
+    li {
+      margin-top: 12px;
+      margin-left: 2px;
+      background-color: white;
+      border-radius: 15px;
+      padding: 13.5px; 
+      p:first-of-type {
+        font-weight: 500;
+        font-size: $pix18;
+      }
+      p:last-of-type {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 200;
+        font-size: $pix15;
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

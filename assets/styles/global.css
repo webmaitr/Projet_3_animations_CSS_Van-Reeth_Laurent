@@ -22,30 +22,25 @@ ul {
 }
 
 .header {
-  height: 3.9rem;
-  align-content: center;
-}
-.header figure {
-  width: 197px;
-  height: 36px;
-  padding-top: 0.5rem;
-  margin: 0 auto;
-  text-align: center;
+  display: grid;
+  grid-template-rows: 63px;
+  justify-content: center;
+  align-items: center;
 }
 .header img {
   width: 162px;
 }
 
-.restaurant-card .restaurant-card-info input[type=checkbox] {
+.like-zone input[type=checkbox] {
   display: none;
 }
-.restaurant-card .restaurant-card-info input[type=checkbox] + label {
+.like-zone input[type=checkbox] + label {
   cursor: pointer;
   fill: none;
   stroke: #101010;
   transition: opacity 2s;
 }
-.restaurant-card .restaurant-card-info input[type=checkbox]:checked + label {
+.like-zone input[type=checkbox]:checked + label {
   fill: url("#pink-gradient");
   stroke: none;
 }
@@ -73,4 +68,33 @@ ul {
 }
 .footer ul:last-of-type li:last-of-type {
   margin-bottom: 0;
-}/*# sourceMappingURL=main.css.map */
+}
+
+@media screen and (min-width: 951px) {
+  .footer {
+    height: 114px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: last baseline;
+  }
+  .footer h2 {
+    margin-bottom: 0;
+    margin-right: 40px;
+  }
+  .footer ul {
+    display: flex;
+    gap: 10px;
+  }
+  .footer ul:first-of-type {
+    order: 3;
+  }
+  .footer ul:first-of-type li {
+    width: 190px;
+  }
+  .footer ul:last-of-type {
+    order: 2;
+  }
+  .footer ul:last-of-type li {
+    width: 130px;
+  }
+}/*# sourceMappingURL=global.css.map */
