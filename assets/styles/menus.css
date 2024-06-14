@@ -22,12 +22,19 @@ ul {
 }
 
 .header {
-  display: grid;
-  grid-template-rows: 63px;
-  justify-content: center;
+  display: flex;
+  justify-content: space-between;
+  height: 63px;
   align-items: center;
 }
-.header img {
+.header > a {
+  width: 64px;
+  padding-left: 17px;
+}
+.header > div {
+  width: 64px;
+}
+.header > img {
   width: 162px;
 }
 
@@ -71,6 +78,12 @@ ul {
 }
 
 @media screen and (min-width: 951px) {
+  .header {
+    height: 96px;
+  }
+  .header > img {
+    width: 200px;
+  }
   .footer {
     height: 114px;
     display: flex;
@@ -99,18 +112,17 @@ ul {
   }
 }
 header {
-  position: relative;
-  z-index: 1;
-  margin-bottom: -32px;
-}
-header .header a > img {
-  width: 30px;
-  position: absolute;
-  top: 17px;
-  left: 17px;
+  margin-bottom: -62px;
 }
 header .top-restau-imgbox img {
   width: 100%;
+  height: 67vw;
+  min-height: 275px;
+  max-height: 383px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 70%;
+     object-position: 50% 70%;
 }
 
 h1 {
@@ -122,6 +134,8 @@ h1 {
 .title-like-box {
   display: flex;
   justify-content: space-between;
+  max-width: 634px;
+  margin: 0 auto;
   align-items: center;
   padding-top: 32px;
 }
@@ -131,18 +145,21 @@ h1 {
 }
 
 main {
+  max-width: 1055px;
+  margin: 0 auto;
   background-color: #f6f6f6;
   position: relative;
   z-index: 2;
-  border-radius: 32px 32px 0 0;
+  border-radius: 45px 45px 0 0;
   padding: 0 13px;
 }
 
 .menus {
-  margin-top: 40px;
+  margin: 40px auto 0 auto;
+  max-width: 634px;
 }
 .menus h2 {
-  font-weight: 200;
+  font-weight: 300;
   font-size: 1rem;
 }
 .menus .green-line {
@@ -154,22 +171,82 @@ main {
   margin-bottom: 40px;
 }
 .menus ul li {
+  display: flex;
+  overflow: hidden;
   margin-top: 12px;
   margin-left: 2px;
   background-color: white;
   border-radius: 15px;
-  padding: 13.5px;
 }
-.menus ul li p:first-of-type {
+.menus ul li .card {
+  width: 100%;
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 13.5px 15px;
+  transition: width 250ms ease-in-out;
+}
+.menus ul li .card .card-description {
+  overflow: hidden;
+}
+.menus ul li .card .card-description p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.menus ul li .card .card-description p:first-of-type {
   font-weight: 500;
   font-size: 1.125rem;
 }
-.menus ul li p:last-of-type {
-  display: flex;
-  justify-content: space-between;
-  font-weight: 200;
+.menus ul li .card .card-description p:last-of-type {
+  font-weight: 300;
   font-size: 0.937rem;
 }
-.menus ul li p:last-of-type span {
+.menus ul li .card .price {
   font-weight: 700;
+  font-size: 0.937rem;
+  align-content: end;
+  margin-left: 15px;
+}
+.menus ul li .select-btn {
+  width: 59px;
+  background-color: #99e2d0;
+  color: white;
+  text-align: center;
+  align-content: center;
+  font-size: 20px;
+  flex: 0 1 auto;
+}
+.menus ul li:hover .card {
+  width: 80%;
+}
+
+.command-box {
+  display: flex;
+  justify-content: center;
+}
+.command-box .pink-btn {
+  background: linear-gradient(173deg, #ff79da -22%, #9356dc 120%);
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  color: white;
+  font-family: Roboto;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: filter 400ms ease-in-out, background 300ms ease-in-out;
+  padding: 0 49px;
+  margin-bottom: 40px;
+}
+.command-box .pink-btn:hover {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.45));
+  background: linear-gradient(173deg, #ff79da 12%, #9356dc 132%);
+}
+
+@media screen and (min-width: 951px) {
+  .title-like-box {
+    justify-content: center;
+    gap: 24px;
+  }
 }/*# sourceMappingURL=menus.css.map */

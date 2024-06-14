@@ -19,6 +19,13 @@ $pix15: 0.937rem;
   font-family: Roboto;
   font-size: 1rem;
   cursor: pointer;
+  transition: 
+    filter 400ms ease-in-out,
+    background 300ms ease-in-out;
+  &:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.45));
+    background: linear-gradient(173deg,$secondary 12%,$primary 132%);
+  }
 }
 
 :root {
@@ -45,15 +52,21 @@ ul {
 }
 
 .header {
-  display: grid;
-  grid-template-rows: 63px;
-  justify-content: center;
+  display: flex;
+  justify-content: space-between;
+  height: 63px;
+  >a {
+    width: 64px;
+    padding-left: 17px;
+  }
+  >div {
+    width: 64px;
+  }
   align-items: center;
-  img {
+  >img {
     width: 162px;
   }
 }
-
 
 //like button
 .like-zone {
@@ -100,6 +113,13 @@ ul {
 }
 
 @media screen and (min-width: 951px) {
+  .header {
+    height: 96px;
+    >img {
+    width: 200px;
+    }
+  }
+
   .footer {
     height: 114px;
     display: flex;

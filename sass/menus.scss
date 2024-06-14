@@ -1,20 +1,15 @@
 @import "global";
 
 header{
-  position: relative;
-  z-index: 1;
-  margin-bottom: -32px;
-  .header {
-    a>img {
-      width: 30px;
-      position: absolute;
-      top: 17px; 
-      left: 17px;
-    }
-  }
-  .top-restau-imgbox {
+  margin-bottom: -62px;
+    .top-restau-imgbox {
     img {
-      width: 100%
+      width: 100%;
+      height: 67vw;
+      min-height: 275px;
+      max-height: 383px;
+      object-fit: cover;
+      object-position: 50% 70%;
     }
   }
 }
@@ -27,6 +22,8 @@ h1 {
 .title-like-box {
   display: flex;
   justify-content: space-between;
+  max-width: 634px;
+  margin: 0 auto;
   align-items: center;
   padding-top: 32px;
 }
@@ -35,17 +32,20 @@ h1 {
 }
 
 main {
+  max-width: 1055px;
+  margin: 0 auto;
   background-color: $background;
   position: relative;
   z-index: 2;
-  border-radius: 32px 32px 0 0;
+  border-radius: 45px 45px 0 0;
   padding: 0 13px;
 }
 
 .menus {
-  margin-top: 40px;
+  margin: 40px auto 0 auto;
+  max-width: 634px;
   h2 {
-    font-weight: 200;
+    font-weight: 300;
     font-size: 1rem;
   }
   .green-line {
@@ -56,24 +56,73 @@ main {
   ul {
     margin-bottom: 40px;
     li {
+      display: flex;
+      overflow: hidden;
       margin-top: 12px;
       margin-left: 2px;
       background-color: white;
       border-radius: 15px;
-      padding: 13.5px; 
-      p:first-of-type {
-        font-weight: 500;
-        font-size: $pix18;
-      }
-      p:last-of-type {
+      
+      .card { 
+        width: 100%;
+        flex: 1 0 auto;
         display: flex;
         justify-content: space-between;
-        font-weight: 200;
-        font-size: $pix15;
-        span {
-          font-weight: 700;
+        padding: 13.5px 15px;
+        transition: width 250ms ease-in-out;
+        
+        .card-description {
+          overflow: hidden;
+          p {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+          p:first-of-type {
+            font-weight: 500;
+            font-size: $pix18;
+          }
+          p:last-of-type {
+            font-weight: 300;
+            font-size: $pix15;
+          }
         }
+        .price {
+          font-weight: 700;
+          font-size: $pix15;
+          align-content: end;
+          margin-left: 15px;
+        }  
+      }
+      .select-btn {
+        width: 59px;
+        background-color: $green-background;
+        color: white;
+        text-align: center;
+        align-content: center;
+        font-size: 20px;
+        flex: 0 1 auto;
       }
     }
+    li:hover .card {
+      width: 80%;
+    }
+  }
+}
+
+.command-box {
+  display: flex;
+  justify-content: center;
+  .pink-btn {
+    @include btn-gradient;
+    padding: 0 49px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 951px) {
+  .title-like-box {
+    justify-content: center;
+    gap: 24px;
   }
 }

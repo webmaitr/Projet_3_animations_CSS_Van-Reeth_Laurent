@@ -8,7 +8,7 @@
       <title>Menu de La palette du goût</title>
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -17,10 +17,11 @@
   <body>
     <header>
       <div class="header">  
-        <img src="../assets/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">  
         <a href="../index.html">
           <img src="../assets/images/logo/GoBack.svg" alt="icon goback">
         </a>
+      <img src="../assets/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
+      <div></div>
       </div>
       <div class="top-restau-imgbox">
         <img src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo d'un plat servi au restaurant La palette du goût"> 
@@ -28,7 +29,7 @@
     </header>
     <main>
       <div class="title-like-box">
-      <h1>La palette du goût</h1>
+        <h1>La palette du goût</h1>
         <div class="like-zone">
           <input type="checkbox" name="favorite1" id="favorite1">
           <label for="favorite1">
@@ -49,48 +50,120 @@
         <div class="green-line"></div>
         <ul>
           <li>
-            <p>Fricassée d'escargots</p>
-            <p>Au piment d'Espelette<span>25&euro;</span></p>
+            <div class="card">
+              <div class="card-description">
+                <p>Fricassée d'escargots</p>
+                <p>Au piment d'Espelette</p>
+              </div>
+              <p class="price">25&euro;</p>
+            </div>
+            <div class="select-btn">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
           </li>
           <li>
-            <p>Foie gras de canard mi-cuit</p>
-            <p>Et ses copeaux de truffe noire<span>35&euro;</span></p>
+            <div class="card">
+              <div class="card-description">
+                <p>Foie gras de canard mi-cuit</p>
+                <p>Et ses copeaux de truffe noire</p>
+              </div>
+              <p class="price">35&euro;</p>
+            </div>
+            <div class="select-btn">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
           </li>
           <li>
-            <p>&OElig;uf au plat</p>
-            <p>Assaisonné à la truffe sur lit de caviar<span>20&euro;</span></p>
+            <div class="card">
+              <div class="card-description">
+                <p>&OElig;uf au plat</p>
+                <p>Assaisonné à la truffe sur lit de caviar</p>
+              </div>
+              <p class="price">20&euro;</p>
+            </div>
+            <div class="select-btn">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
           </li>
         </ul>
         <h2>PLATS</h2>
         <div class="green-line"></div>
         <ul>
           <li>
-            <p>Filet de b&oelig;uf aux herbes</p>
-            <p>Accompagné de sa ribambelle de légumes<span>40&euro;</span></p>
+            <div class="card">
+              <div class="card-description">
+                <p>Filet de b&oelig;uf aux herbes</p>
+                <p>Accompagné de sa ribambelle de légumes</p>
+              </div>
+              <p class="price">40&euro;</p>
+            </div>
+            <div class="select-btn">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
           </li>
           <li>
-            <p>Parmentier de queue de b&oelig;uf</p>
-            <p>À la truffe noire sur sa purée de panais<span>35&euro;</span></p>
+            <div class="card">
+              <div class="card-description">
+                <p>Parmentier de queue de b&oelig;uf</p>
+                <p>À la truffe noire sur sa purée de panais</p>
+              </div>
+              <p class="price">44&euro;</p>
+            </div>
+            <div class="select-btn">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
           </li>
           <li>
-            <p>Filet de turbot</p>
-            <p>Aux agrumes<span>44&euro;</span></p>
+            <div class="card">
+              <div class="card-description">
+                <p>Filet de turbot</p>
+                <p>Aux agrumes</p>
+              </div>
+              <p class="price">44&euro;</p>
+            </div>
+            <div class="select-btn">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
           </li>
         </ul>
         <h2>DESSERTS</h2>
         <div class="green-line"></div>
         <ul>
           <li>
-            <p>Paris-Brest</p>
-            <p>Revisité<span>18&euro;</span></p>
+            <div class="card">
+              <div class="card-description">
+                <p>Paris-Brest</p>
+                <p>Revisité</p>
+              </div>
+              <p class="price">18&euro;</p>
+            </div>
+            <div class="select-btn">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
           </li>
           <li>
-            <p>Macaron au chocolat d'exception</p>
-            <p>Et glace à la vanille de Madagascar<span>22&euro;</span></p>
+            <div class="card">
+              <div class="card-description">
+                <p>Macaron au chocolat d'exception</p>
+                <p>Et glace à la vanille de Madagascar</p>
+              </div>
+              <p class="price">22&euro;</p>
+            </div>
+            <div class="select-btn">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
           </li>
           <li>
-            <p>Mousse au chocolat</p>
-            <p>Au piment d'Espelette et à la truffe noire<span>23&euro;</span></p>
+            <div class="card">
+              <div class="card-description">
+                <p>Mousse au chocolat</p>
+                <p>Au piment d'Espelette et à la truffe noire</p>
+              </div>
+              <p class="price">23&euro;</p>
+            </div>
+            <div class="select-btn">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
           </li>
         </ul>
         <div class="command-box">

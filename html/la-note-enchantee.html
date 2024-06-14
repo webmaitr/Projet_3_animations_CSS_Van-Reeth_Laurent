@@ -8,7 +8,7 @@
       <title>Menu de La note enchantée</title>
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -17,18 +17,19 @@
   <body>
     <header>
       <div class="header">  
-        <img src="../assets/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">  
         <a href="../index.html">
           <img src="../assets/images/logo/GoBack.svg" alt="icon goback">
         </a>
-      </div>
+        <img src="../assets/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
+        <div></div>
+      </div> 
       <div class="top-restau-imgbox">
         <img src="../assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo d'un plat servi au restaurant La palette du goût"> 
       </div>  
     </header>
     <main>
       <div class="title-like-box">
-      <h1>La note enchantée</h1>
+        <h1>La note enchantée</h1>
         <div class="like-zone">
           <input type="checkbox" name="favorite1" id="favorite1">
           <label for="favorite1">
@@ -49,52 +50,132 @@
         <div class="green-line"></div>
         <ul>
           <li>
-            <p>Ravioles de foie gras</p>
-            <p>Accompagnées de leur crème à la truffe<span>25&euro;</span></p>
+            <div class="card">
+              <div class="card-description">
+                <p>Ravioles de foie gras</p>
+                <p>Accompagnées de leur crème à la truffe</p>
+              </div>
+              <p class="price">25&euro;</p>
+            </div>
+            <div class="select-btn">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
           </li>
           <li>
-            <p>Caviar osciètre</p>
-            <p>Sur blini à la farine de blé noir<span>35&euro;</span></p>
+            <div class="card">
+              <div class="card-description">
+                <p>Caviar osciètre</p>
+                <p>Sur blini à la farine de blé noir</p>
+              </div>
+              <p class="price">35&euro;</p>
+            </div>
+            <div class="select-btn">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
           </li>
           <li>
-            <p>Homard et espuma de potiron</p>
-            <p>Marinés aux zestes d'orange<span>20&euro;</span></p>
+            <div class="card">
+              <div class="card-description">
+                <p>Homard et espuma de potiron</p>
+                <p>Marinés aux zestes d'orange</p>
+              </div>
+              <p class="price">20&euro;</p>
+            </div>
+            <div class="select-btn">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
           </li>
           <li>
-            <p>Foie gras de canard cuit entier</p>
-            <p>Confiture de figue et pain toasté<span>20&euro;</span></p>
+            <div class="card">
+              <div class="card-description">
+                <p>Foie gras de canard cuit entier</p>
+                <p>Confiture de figue et pain toasté</p>
+              </div>
+              <p class="price">20&euro;</p>
+            </div>
+            <div class="select-btn">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
           </li>
         </ul>
         <h2>PLATS</h2>
         <div class="green-line"></div>
         <ul>
           <li>
-            <p>Noix de coquilles Saint-Jacques</p>
-            <p>Sur lit de purée de céleri-rave<span>40&euro;</span></p>
+            <div class="card">
+              <div class="card-description">
+                <p>Noix de coquilles Saint-Jacques</p>
+                <p>Sur lit de purée de céleri-rave</p>
+              </div>
+              <p class="price">40&euro;</p>
+            </div>
+            <div class="select-btn">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
           </li>
           <li>
-            <p>Langoustine poêlée</p>
-            <p>Purée de patate douce<span>35&euro;</span></p>
+            <div class="card">
+              <div class="card-description">
+                <p>Langoustine poêlée</p>
+                <p>Purée de patate douce</p>
+              </div>
+              <p class="price">35&euro;</p>
+            </div>
+            <div class="select-btn">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
           </li>
           <li>
-            <p>Mijoté de queue de b&oelig;uf</p>
-            <p>Et riz sauvage aux zestes de citron<span>45&euro;</span></p>
+            <div class="card">
+              <div class="card-description">
+                <p>Mijoté de queue de b&oelig;uf</p>
+                <p>Et riz sauvage aux zestes de citron</p>
+              </div>
+              <p class="price">45&euro;</p>
+            </div>
+            <div class="select-btn">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
           </li>
         </ul>
         <h2>DESSERTS</h2>
         <div class="green-line"></div>
         <ul>
           <li>
-            <p>Macaron noisette et chocolat</p>
-            <p>Glace au caramel brun et sel de Guérande<span>18&euro;</span></p>
+            <div class="card">
+              <div class="card-description">
+                <p>Macaron noisette et chocolat</p>
+                <p>Glace au caramel brun et sel de Guérande</p>
+              </div>
+              <p class="price">18&euro;</p>
+            </div>
+            <div class="select-btn">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
           </li>
           <li>
-            <p>Baba au rhum revisité</p>
-            <p>Avec son coulis de citron<span>22&euro;</span></p>
+            <div class="card">
+              <div class="card-description">
+                <p>Baba au rhum revisité</p>
+                <p>Avec son coulis de citron</p>
+              </div>
+              <p class="price">22&euro;</p>
+            </div>
+            <div class="select-btn">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
           </li>
           <li>
-            <p>Tarte au citron meringuée</p>
-            <p>Déstructurée<span>23&euro;</span></p>
+            <div class="card">
+              <div class="card-description">
+                <p>Tarte au citron meringuée</p>
+                <p>Déstructurée</p>
+              </div>
+              <p class="price">23&euro;</p>
+            </div>
+            <div class="select-btn">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
           </li>
         </ul>
         <div class="command-box">
