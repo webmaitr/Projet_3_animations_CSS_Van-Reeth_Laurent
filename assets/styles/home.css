@@ -45,7 +45,6 @@ ul {
   cursor: pointer;
   fill: none;
   stroke: #101010;
-  transition: opacity 2s;
 }
 .like-zone input[type=checkbox]:checked + label {
   fill: url("#pink-gradient");
@@ -266,6 +265,19 @@ h2 {
 .restaurants-section ul .restaurant-card .img-box .portrait-pic {
   -o-object-position: 0 60%;
      object-position: 0 60%;
+}
+.restaurants-section ul .restaurant-card .img-box .new-box {
+  background-color: #99e2d0;
+  color: #008766;
+  width: 80px;
+  height: 29px;
+  font-size: 0.87rem;
+  text-align: center;
+  align-content: center;
+  position: relative;
+  bottom: 100%;
+  margin: 13px 11px auto auto;
+  border-radius: 3px;
 }
 .restaurants-section ul .restaurant-card .restaurant-card-info {
   display: flex;

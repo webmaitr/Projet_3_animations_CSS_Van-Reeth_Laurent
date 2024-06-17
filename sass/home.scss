@@ -137,6 +137,19 @@ h2 {
         }  
         .portrait-pic{
             object-position: 0 60%;
+        }
+        .new-box {
+          background-color: $green-background;
+          color: $green-font;
+          width: 80px;
+          height: 29px;
+          font-size: 0.87rem;
+          text-align: center;
+          align-content: center;
+          position: relative;
+          bottom: 100%;
+          margin: 13px 11px auto auto;
+          border-radius: 3px;
         } 
       }
       .restaurant-card-info {

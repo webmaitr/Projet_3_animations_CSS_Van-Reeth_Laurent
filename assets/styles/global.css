@@ -45,7 +45,6 @@ ul {
   cursor: pointer;
   fill: none;
   stroke: #101010;
-  transition: opacity 2s;
 }
 .like-zone input[type=checkbox]:checked + label {
   fill: url("#pink-gradient");
