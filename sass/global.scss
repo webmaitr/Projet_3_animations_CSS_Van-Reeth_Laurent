@@ -10,7 +10,7 @@ $pix24: 1.5rem;
 $pix18: 1.125rem;
 $pix15: 0.937rem;
 @mixin btn-gradient {
-  background: linear-gradient(173deg,$secondary -22%,$primary 120%);;
+  background: linear-gradient(173deg,$secondary -22%,$primary 120%);
   height: 50px;
   border: none;
   border-radius: 25px;
