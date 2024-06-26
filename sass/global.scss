@@ -28,7 +28,23 @@ $pix15: 0.937rem;
   }
 }
 
-
+@keyframes checked-heart {
+  0% {
+    fill: none;
+    stroke: #101010;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    fill: url("#pink-gradient");
+    stroke: none;
+    opacity: 1;
+  }
+}
 
 :root {
   font-family: Roboto;
@@ -80,8 +96,9 @@ ul {
       stroke: #101010;
     }
     &:checked + label {
-      fill: url("#pink-gradient");
-      stroke: none;
+      animation: 400ms checked-heart;
+      animation-fill-mode: both;
+      animation-direction: alternate;
     }
   }  
 }

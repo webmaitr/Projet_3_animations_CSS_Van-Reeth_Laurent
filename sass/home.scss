@@ -53,6 +53,7 @@
   100% {
     height: 0;
     opacity: 0;
+    z-index: -1;
   }
 }
 
@@ -82,8 +83,8 @@
     height: 5px;
     background: linear-gradient(173deg,$secondary -22%,$primary 120%);
     transform-origin: left;
-    animation-timing-function: linear;
     animation: bar-loader 3s;
+    animation-timing-function: steps(12, end);
   }
 }
 
@@ -136,6 +137,8 @@ h2 {
 .pink-btn {
   @include btn-gradient;
   padding: 0 22px;
+  display: inline-block;
+  align-content: center;
 }
 
 .info-section {
